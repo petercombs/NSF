@@ -117,6 +117,10 @@ Using known binding sites upstream of the distinguishing genes, I will use genom
 In addition to profiling the transcriptome of the dissected tracheal placodes, I will also measure RNA levels in the tissues from which they were excised.
 I will verify that my dissections are both complete and specific by ensuring that levels of both primary markers (like trachealess) as well as secondary markers (like btl, sms, rho, and tdf) are high in the placodes and low in the surrounding tissue via in situ hybridization of similar dissections before proceeding to full transcriptome libraries.
 
+The rapidly improving pace of genome sequencing technology has made this a feasibly small experiment.  
+There are approximately 30 distinct samples to be assayed (10 placodes $\times$ 3 time points), which can be easily sequenced to a depth of 6 million reads in a single lane or deeper across multiple lanes.
+Although there is not a uniform consensus on how deep to sequence \cite{Sims:2014ci}, previous studies in Drosophila have established that read depths on this order are sufficient to establish reliable estimates of transcript abundance, and to measure those changes across time \cite{Lott:2011cc, Combs:2013jy}.
+I will also conduct {\em in situ} hybridization experiments on all transcription factors identified as differentially expressed across these samples, further lending confidence to the data.
 
 Regardless of whether all tracheal placodes share the same transcriptional program, it is possible that there are additional phosphorylation differences that potentially affect the activity, even given the same protein complement.
 The Adryan lab is based in the Cambridge Systems Biology Centre is well positioned to explore whether these differences also exist, since it has ongoing collaborations with the research group of Prof.  Kathryn Lilley and access to proteomic mass-spec facilities and well-developed expertise in performing and interpreting these assays (CITE).
@@ -143,13 +147,26 @@ If there is any plasticity to the traits studied, the rapid generation time of D
 In collaboration with John Pool at the University of Wisconsin, the Adryan group is in possession of D. melanogaster fly strains endemic at SOMEHEIGHT, and it will be interesting to see if there are any longterm morphological as well as transcriptional adjustments.
 
 \section{Aim: Probe the evolution of tracheal developmental transcriptomes with an eye towards understanding regulation}
+
 Nature has performed an extensive mutational assay, with strong selection at every generation towards functional development.
 Examining the 12 sequenced Drosophila genomes, and correlating changes around known tracheal cis-regulatory modules (of which there are zero to one...).
 
-I will perform RNAseq experiments on dissected trachea from three of the original set of 12 sequenced Drosophila species: D. melanogaster, D. yakuba and D. pseudoobscura.
+I will perform paired RNAseq and ATACseq experiments on dissected trachea from three of the original set of 12 sequenced Drosophila species: D. melanogaster, D. yakuba and D. pseudoobscura, and D. virilis.
+This selection of species covers approximately 40 million years of divergence between the most distal branches, and as little as 5 million years between {\em D. melanogaster} and {\em yakuba} \cite{Russo:1995ti}.
+Furthermore, each has a high quality reference transcriptome and the set of species has been used in a similar study of Stage 5 embryos \cite{Paris:2013ib}. 
 % (I'm thinking of time and cost here. Any "better" Drosophilas you'd think?)
 
-By comparing changes in putative cis-regulatory sequence around genes that do and do not change expression levels across the Drosophila clade, I will help address issues around cis-regulatory grammars (CITE). EXPAND HOW YOU'RE GOING TO IDENTIFY CIS-REG SEQUENCES.
+The RNAseq measurements will build on those discussed in my first aim.  
+Using the estimates of abundance within and between the placodes, I will select a handful of placodes from {\em D. melanogaster} that are most similar to the canonical tracheal transcription program, as far as it is known \cite{Ghabrial:2003kz}. 
+I will then 
+
+The ATACseq protocol is an approach to rapidly profile open chromatin in very small samples \cite{Buenrostro:2013bc}, and preliminary experiments have shown it to be easily adapted to the small genome in the {\em Drosophila} embryo.
+Armed with this data, I will be able to identify putative cis-regulatory modules near genes of interest. 
+Although I do not expect that, in general, these CRMs will share strong sequence similarity, putatively orthologous CRMs can be assigned using the complement of TF binding sites, and confirmed using transgenic lines \cite{Hare:2008fi}.
+
+By comparing changes in putative cis-regulatory sequence around genes that do and do not change expression levels across the {\em Drosophila} clade, I will help address issues around cis-regulatory grammars \cite{Papatsenko:2009de, Hare:2008fi}. 
+
+
 
 Developing tracheal tissue is the ideal sample to examine for this type of experiment.
 Projects such as modENCODE, which have done some transcription profiling in other Drosophila species, have looked at samples that consist of a large number of already differentiated tissue types (typically whole embryos or adults), effectively averaging many very different transcriptional signals (CITE).
