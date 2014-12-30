@@ -6,7 +6,12 @@
 % Sarah Gille, with contributions from other collaborators.
 
 \newcommand{\degrees}{$\!\!$\char23$\!$}
-
+\def\SummaryPage{B}
+\def\TOCPage{C}
+\def\DescriptionPage{D}
+\def\ReferencesPage{E}
+\def\BioSketchPage{F}
+\def\DataManagementPage{SD}
 
 \renewcommand{\refname}{\centerline{References cited}}
 
@@ -59,7 +64,7 @@ My ultimate goal is to pursue a a career in the biotech industry, probably via t
 \ \\
 
 
-\renewcommand{\thepage} {B--\arabic{page}}
+\renewcommand{\thepage} {\SummaryPage--\arabic{page}}
 
 \newpage
 
@@ -68,7 +73,7 @@ My ultimate goal is to pursue a a career in the biotech industry, probably via t
 % those limits
 
 \pagenumbering{arabic}
-\renewcommand{\thepage} {D--\arabic{page}}
+\renewcommand{\thepage} {\DescriptionPage--\arabic{page}}
 
 \newpage
 
@@ -224,10 +229,15 @@ The proposed project is ambitious, but is feasible to complete within the three 
 
 \newpage
 \pagenumbering{arabic}
-\renewcommand{\thepage} {E--\arabic{page}}
+\renewcommand{\thepage} {\ReferencesPage--\arabic{page}}
 
 \bibliography{papers}
 \bibliographystyle{plain}
 
+\newpage
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\BioSketchPage--\arabic{page}}
+
+\noindent{\Large \bf Biographical Sketch}
 
 \end{document}
