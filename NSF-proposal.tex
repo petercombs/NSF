@@ -2,6 +2,7 @@
 \usepackage{epsfig}
 \usepackage[normalem]{ulem}
 \usepackage{natbib}
+\usepackage{hyperref}
 
 % NSF proposal generation template style file.
 % based on latex stylefiles  written by Stefan Llewellyn Smith and
@@ -28,7 +29,7 @@
 
 \begin{center}
 {\Large{\bf Project Summary}}\\*[3mm]
-{\bf Proposal Title} \\*[3mm]
+{\bf Dissecting the tracheal developmental network across space, time, and evolutionary distance } \\*[3mm]
 
 Peter Acu\~na Combs \\
 
@@ -41,15 +42,20 @@ Here I propose conducting a tightly focused series of experiments to answer key 
 The earliest steps in the development of this tubular epithelial network have become a model for branching morphogenesis, a process also relevant in human development and disease.
 I will first address whether tracheal precursors each have a unique transcriptional cellular identity, or whether morphological or physiological differences are solely acquired at later developmental time points.
 Next, I will compare tracheal development in a range of Drosophila species, with the final aim to assay tracheal cell types across those species, and seek correlations with cis-regulatory sequence change upstream of tracheal genes.
+\\
 
 \noindent
 {\bf Intellectual Merit}
+
+The proposed research will significantly advance the study of branching morphogenesis in flies, while also contributing to the understanding of gene regulation more broadly.
+In addition to the insights that I will personally contribute, I will rapidly and broadly release a wide-ranging dataset, which others can use to address their own particular research questions.
 
 My research up until this point has uniquely qualified me to undertake this research program.
 This experiment in Aim 1 is a natural extension of my goals of characterizing genome-wide changes in expression across spatially varying structures.
 Furthermore,  I have extensive familiarity with existing comparative experiments that were conducted in my PhD lab.
 This will directly support the work in Aims 2 and 3.  The entire project will leverage my computational skills, creating an exceptionally tight feedback loop between experiment and analysis.
 The study will further help me to generalize my findings on early patterning to the development of complex tissues.
+\\
 
 \noindent
 {\bf Broader Impacts}
@@ -90,39 +96,38 @@ Organisms begin with a single undifferentiated cell, but ultimately must specify
 Often, equivalent neighboring cells must therefore make different decisions, mediated by a combination of external signals, intercellular communication and stochastic effects.
 
 The instructions for this symmetry breaking are encoded in the genome, but as yet we lack a detailed understanding of how cells respond to these cues to reliably differentiate into the appropriate cell types located in the appropriate places.
-Given that the distribution of growth factors etc.  follows the laws of physics, the rate of successful development into a fully functional adults suggests that at least some of these processes are robust or self-correcting.
-While a number of models of transcriptional response to cues have been mooted, (NOT SURE WHAT REFS), we still lack a lot of data how this cell specific robustness is ultimately leading to healthy tissue.
-So while starting from a set of very similar cellular characteristics, it is not clear to what extent each of these structures maintains a distinct identity.
+Given that the distribution of growth factors follows the laws of physics (e.g. they are subject to diffusion-based noise), the rate of successful development into fully functional adults suggests that at least some of these processes are robust or self-correcting.
+While a number of detailed biophysical models of enhancer organization have been mooted \cite{Panne:2007jy,Papatsenko:2009de,Lusk:2010il}, we still lack a lot of data on how enhancers are able to robustly drive cell specific expression, which ultimately leads to healthy tissue.
+Although these repeated structures retain very similar cellular characteristics, it is not clear to what extent each of these structures maintains a distinct identity.
 
 Unlike the vertebrate plan of a central circulatory system to provide oxygen for the whole animal, flies perfuse their organs directly using a number of trachea distributed throughout the body.
 The specification, determination and branching of tracheal cells in the Drosophila embryos provides an excellent system to study the specification of repeated structures in development.
-At approximately stage 10 (~5 hours after egg-lay), about 40 cells of the dorsal ectoderm form a placode in each metamere on both sides of the embryo.
+At approximately stage 10 ($\sim$5 hours after egg-lay), about 40 cells of the dorsal ectoderm form a placode in each metamere on both sides of the embryo.
 These cells undergo exactly one round of mitosis.
 Following these initial events, until the end of embryogenesis, this set of $80 \times 10 \times 2 = 1600$ cells proceed to invaginate into the underlying tissue.
 Most of their migratory behavior is in response to FGF (branchless) driven cues, but EGF and BMP signaling confer spatial information for the correct localization of tracheal branches.
 While a number of studies of mutants have established the primary factors in the genetic network that directs tracheal formation (see \cite{Ghabrial:2003kz}, for review), it has not been possible to fully characterize the transcriptional identity of early tracheal tissues.
-(There's this rubbish Debbie Andrews paper "Trachealess regulates all tracheal genes", but it's conceptionally so flawed it's not even science - check it out).
+%(There's this rubbish Debbie Andrews paper "Trachealess regulates all tracheal genes", but it's conceptionally so flawed it's not even science - check it out).
 
 Beyond elucidating general principles in branching and differentiation, studying the Drosophila embryo is likely to provide useful insights into branching morphogenesis in human tissue development in particular.
-Genes associated with lung disease in humans are often homologous to the network in flies (that's unpublished so far -- but you could cite the papers about Sprouty that was first discovered in the tracheal system but is hugely important in lung development as well).
-Drosophila embryos are naturally transparent, inexpensive to rear, have short generation times.
-Each of these allows more rapid experimental iteration.
+Genes associated with lung disease in humans are often homologous to the network in flies; homologs of {\em sprouty} show similar effects as {\em Drosophila} mutants when depleted in the developing mouse embryo \cite{Tefft:1999tu}.
+Unlike mammalian systems, however, Drosophila embryos are naturally transparent, inexpensive to rear, have short generation times, which allow more rapid experimental iteration.
 Furthermore, the small, relatively simple genome should ease the parsing of genetic networks.
-MAYBE worth to mention the about 300 publications on tracheal development, the ~1000 genes known to be expressed in the trachea on the basis of GO or BDGP annotation, and our overall understanding of the "network" (like the ones set into context to each other in the Ghabrial review).
+Drosophila tracheal development in particular has a solid background in the literature, with $\sim$300 previous publications \cite{Ghabrial:2003kz,Affolter:2008di}.
 
 
 \section{Aim: Determine whether tracheal branches are molecularly distinguishable}
 
 Previously, it has not been practical to perform genome-wide screens for genes with differential function across different tracheal branches.
-In the first part of this aim, I will leverage my experience performing RNAseq measurements on small samples to dissect and profile the transcriptomes of individual tracheal placodes, which consist of $\approx$40 cells at their earliest detectable stage.
+In the first part of this aim, I will leverage my experience performing RNAseq measurements on small samples to dissect individual tracheal placodes and profile their transcriptomes, which consist of $\sim$40 cells at their earliest detectable stage.
 While I will initially direct my attention to the transcription factors known to be involved in the orchestration of tracheal gene expression programs ({\em Trachealess}, {\em Tango}, {\em Ventral veins lacking}, {\em Stat92E}, etc), I am ultimately interested in the entire repertoire of expressed genes.
 
 I will dissect cells from tracheal placodes from embryos at three time points: from earliest identifiable placodal structures at stage 11, cells from each of the extensions in the five finger stage in stage 12 (following FGF stimulation) and prior to the fusion of differentiated and branched trachea, with approximately half-hour time resolution.
 If different tracheal tubes acquire distinct identities at any time after the initial stage, this simple time series will suggest mechanisms for the specification.
-Using known binding sites upstream of the distinguishing genes, I will use genome bioinformatics to establish a list of likely transcription factors that drive the differentiation process, which can then be directly tested using a number of traditional and state-of-the-art genetic techniques.
+Using known binding motifs upstream of the distinguishing genes, I will computationally establish a list of likely transcription factors that drive the differentiation process, which can then be directly tested using a number of traditional and state-of-the-art genetic techniques.
 
 In addition to profiling the transcriptome of the dissected tracheal placodes, I will also measure RNA levels in the tissues from which they were excised.
-I will verify that my dissections are both complete and specific by ensuring that levels of both primary markers (like trachealess) as well as secondary markers (like btl, sms, rho, and tdf) are high in the placodes and low in the surrounding tissue via in situ hybridization of similar dissections before proceeding to full transcriptome libraries.
+I will verify that my dissections are both complete and specific by ensuring that levels of both primary markers (like {\em trachealess}) as well as secondary markers (like {\em btl, sms, rho,} and {\em tdf}) are high in the placodes and low in the surrounding tissue via {\em in situ} hybridization of similar dissections before proceeding to full transcriptome libraries.
 
 The rapidly improving pace of genome sequencing technology has made this a feasibly small experiment.
 There are approximately 30 distinct samples to be assayed (10 placodes $\times$ 3 time points), which can be easily sequenced to a depth of 6 million reads in a single lane or deeper across multiple lanes.
@@ -130,64 +135,64 @@ Although there is not a uniform consensus on how deep to sequence \cite{Sims:201
 I will also conduct {\em in situ} hybridization experiments on all transcription factors identified as differentially expressed across these samples, further lending confidence to the data.
 
 Regardless of whether all tracheal placodes share the same transcriptional program, it is possible that there are additional phosphorylation differences that potentially affect the activity, even given the same protein complement.
-The Adryan lab is based in the Cambridge Systems Biology Centre and is well positioned to explore whether these differences also exist, since it has ongoing collaborations with the research group of Prof.  Kathryn Lilley and access to proteomic mass-spec facilities and well-developed expertise in performing and interpreting these assays (CITE).
+The Adryan lab is based in the Cambridge Systems Biology Centre and is well positioned to explore whether these differences also exist, since it has ongoing collaborations with the research group of Prof.  Kathryn Lilley and access to proteomic mass-spec facilities and well-developed expertise in performing and interpreting these assays\cite{Thiel:2011ei,Lowe:2014bu,Elliott:2014kr}.
 
 
 \section{Aim: Characterize the evolution of tracheal development}
 
 The Drosophila genus is extremely broad, encompassing more than 40 million years of differentiation, and adaptation to both restricted ecological niches and cosmopolitan distributions.
-(Not an expert, but mention that this is roughly equivalent than the difference between man and chicken).
-There has not, as yet, been a comprehensive morphological study of tracheal development across these species.
-In this aim, I will perform time lapse microscopy of tracheal development in a broad range of Drosophila species, using CRISPR/CAS9 directed integration of a GFP tag in the trachealess locus.
+%(Not an expert, but mention that this is roughly equivalent than the difference between man and chicken).
+There has not yet been a comprehensive morphological study of tracheal development across these species.
+In this aim, I will perform time lapse microscopy of tracheal development in a broad range of {\em Drosophila} species, using CRISPR/CAS9 directed integration of a GFP tag in the {\em trachealess} locus.
 If feasible, I will also use the 2A12 marker or chitin binding probe for the comparative visualization of tracheal lumens.
 
-While time-lapse imaging of Drosophila development has been performed, the primary focus has been on establishing equivalent developmental time points \cite{Kuntz:2014bc}.
-Consequently, the dataset does not have tracheal markers or sufficient numbers of individuals to address variation in tracheal number.
-I will therefore conduct similar time-lapse series, but focusing on a narrower window during which tracheal structures form.
+While time-lapse imaging of {\em Drosophila} development has been performed, the primary focus has been on establishing equivalent developmental time points \cite{Kuntz:2014bc}.
+Consequently, the dataset does not have specific tracheal markers or sufficient numbers of individuals to address variation in tracheal number.
+I will therefore conduct similar time-lapse experiments, but focusing on a narrower window during which tracheal structures form.
 This will give the benefit of increasing effective throughput, allowing for robust estimation of the variance in size, speed, and degree of branching.
 
 My hypothesis is that key tracheal qualities, such as number of placodes, degree of branching, and size of tracheal tubes will co-associate with the original habitat of each particular species, even when reared under identical conditions.
 The primary function of trachea is to provide oxygen to tissues, and the bioavailability of that oxygen will depend on altitude and temperature.
-If there is any plasticity to the traits studied, the rapid generation time of Drosophila should aid selection in rapidly providing optimal levels of oxygenation, without wasting resources developing overly intricate tracheal structures.
+If there is any plasticity to the traits studied, the rapid generation time of {\em Drosophila} should aid selection in rapidly providing optimal levels of oxygenation, without wasting resources developing overly intricate tracheal structures.
 
 
-In collaboration with John Pool at the University of Wisconsin, the Adryan group is in possession of D. melanogaster fly strains endemic at SOMEHEIGHT, and it will be interesting to see if there are any longterm morphological as well as transcriptional adjustments.
+In collaboration with John Pool at the University of Wisconsin, the Adryan group is in possession of {\em D. melanogaster} fly strains endemic above 1600m, and it will be interesting to see if there are any long term morphological as well as transcriptional adjustments in tracheal development.
+This may well parallel known changes in pigmentation with altitude\cite{Pool:2007ep}.
 
 \section{Aim: Probe the evolution of tracheal developmental transcriptomes with an eye towards understanding regulation}
 
 Nature has performed an extensive mutational assay, with strong selection at every generation towards functional development.
-Examining the 12 sequenced Drosophila genomes, and correlating changes around known tracheal cis-regulatory modules (of which there are zero to one...).
+Examining the 12 sequenced {\em Drosophila} genomes, and correlating changes around tracheal cis-regulatory modules (CRMs) with changes in expression will provide insight into the factors that drive functional, conserved expression \cite{Clark:2007gf}.
 
-I will perform paired RNAseq and ATACseq experiments on dissected trachea from three of the original set of 12 sequenced Drosophila species: D. melanogaster, D. yakuba and D. pseudoobscura, and D. virilis.
+I will perform paired RNAseq and ATACseq experiments on dissected trachea from four of the original set of 12 sequenced {\em Drosophila} species: {\em D. melanogaster}, {\em D. yakuba}, {\em D. pseudoobscura}, and {\em D. virilis}.
 This selection of species covers approximately 40 million years of divergence between the most distal branches, and as little as 5 million years between {\em D. melanogaster} and {\em yakuba} \cite{Russo:1995ti}.
-Furthermore, each has a high quality reference transcriptome and the set of species has been used in a similar study of Stage 5 embryos \cite{Paris:2013ib}.
+Furthermore, each has a high quality reference transcriptome; this led to the same set of species being used in a similar study of Stage 5 embryos \cite{Paris:2013et}.
 % (I'm thinking of time and cost here. Any "better" Drosophilas you'd think?)
 
-The RNAseq measurements will build on those discussed in my first aim.
+The RNAseq measurements described here will build on those discussed in my first aim.
 Using the estimates of abundance within and between the placodes, I will select a handful of placodes from {\em D. melanogaster} that are most similar to the canonical tracheal transcription program, as far as it is known \cite{Ghabrial:2003kz}.
-I will then
+I will then look for genes with similar transcriptional programs across the {\em Drosophila} clade.
+I will also generate a set of genes with a clear correlation of changes in both expression level and morphological markers, as assayed using time-lapse microscopy in my second aim.
+Due to the relatively small number of species I plan to sequence and the finite number of changes, there may be some spurious correlations in gene expression change and morphological conservation; nevertheless, these sets should be enriched for genes with a strongly conserved role in tracheal development.
 
 The ATACseq protocol is an approach to rapidly profile open chromatin in very small samples \cite{Buenrostro:2013bc}, and preliminary experiments have shown it to be easily adapted to the small genome in the {\em Drosophila} embryo.
-Armed with this data, I will be able to identify putative cis-regulatory modules near genes of interest.
+Armed with this data, I will be able to identify putative CRMs near genes of interest.
 Although I do not expect that, in general, these CRMs will share strong sequence similarity, putatively orthologous CRMs can be assigned using the complement of TF binding sites, and confirmed using transgenic lines \cite{Hare:2008fi}.
-
-By comparing changes in putative cis-regulatory sequence around genes that do and do not change expression levels across the {\em Drosophila} clade, I will help address issues around cis-regulatory grammars \cite{Papatsenko:2009de, Hare:2008fi}.
-
-
+Correlated changes in CRMs, gene expression, and morphology will provide a highly restricted set of genes for more detailed follow up across the {\em Drosophila} clade.
 
 Developing tracheal tissue is the ideal sample to examine for this type of experiment.
-Projects such as modENCODE, which have done some transcription profiling in other Drosophila species, have looked at samples that consist of a large number of already differentiated tissue types (typically whole embryos or adults), effectively averaging many very different transcriptional signals (CITE).
+The modENCODE Project has done some transcription profiling in other {\em Drosophila} species, looking at samples that consist of a large number of already differentiated tissue types (typically whole adults), averaging many very different transcriptional signals \cite{Brown:2014ke}.
 By contrast, this experiment would focus on a single tissue type, which maximizes signal-to-noise on the genes that are actually changing across evolution.
-Furthermore, the choice of a tissue in the process of differentiation will help address the narrower question of what changes are responsible for establishment of cell fate, which is likely to be different from maintenance (CITE).
+Furthermore, the choice of a tissue in the process of differentiation will help address the narrower question of what changes are responsible for establishment of cell fate, which may be different from maintenance.
 
 This aim will build upon and complement the results from Aim 1.
-Having a relatively complete inventory of transcription factors in D.  melanogaster will provide a very well annotated baseline.
-This experiment will also feed back into the transcriptome profiling genes with a coherent pattern of conservation across the phylogeny are more likely to be functionally important to the process of differentiation.
+Having a relatively complete inventory of transcription factors in {\em D. melanogaster} will provide a very well annotated baseline.
+This experiment will also help to narrow the set of relevant genes identified in the whole-transcriptome experiment---genes with a coherent pattern of conservation across the phylogeny are more likely to be functionally important to the process of differentiation.
 
 In analyzing this data, I will consider not only genes that are well conserved, but those that seem to be rapidly evolving differential levels of expression.
 The most interesting correlate is likely to be the original environment of the fly.
-For instance, species that evolved at higher altitudes are likely to require higher levels of branching to compensate for the lower oxygen levels (CITE).
-While actual oxygen levels during development are likely to contribute, coherent changes in gene expression levels even when reared at the same oxygen saturation would suggest that species evolve a particular set point, which individuals can adjust according to the environment (CITE).
+For instance, species that evolved at higher altitudes are likely to require higher levels of branching to compensate for the lower oxygen levels, likely mediated through {\em Branchless} \cite{Jarecki:1999wc}.
+While actual oxygen levels during development are known to contribute, coherent changes in gene expression levels even when reared at the same oxygen saturation would suggest that species evolve a particular set point, which individuals can adjust according to the environment.
 
 
 
@@ -224,8 +229,33 @@ The proposed project is ambitious, but is feasible to complete within the three 
 
 \subsection{Intellectual Merit}
 
+This project will advance knowledge and understanding of tracheal specification at a number of levels.
+First and foremost, it will provide a gold-standard set of genes involved in tracheal development, and their changes over space, time and evolution.
+This will be a broad-ranging data set, and while I will highlight key insights in publishing it, I will also make the raw data, processed data, and analysis software available, allowing others to perform their own analyses to answer other questions.
+More broadly, combining these data sets with mammalian and other vertebrate data should help to highlight core conserved patterns in lung development and disease.
+
+My graduate work, combined with previous work in the Adryan Lab at Cambridge, uniquely prepares me to work on the proposed project.
+I have demonstrated expertise on performing and interpreting challenging RNAseq experiments in flies, a cornerstone of this work.
+This project also draws inspiration from a number of existing lines of research from the Eisen lab, though it combines then in an original way to advance knowledge both in the particulars of tracheal development and more broadly across developmental biology.
+The Adryan Lab will be especially valuable to me in learning a new developmental system.
+
+The Cambridge Systems Biology Centre provides the ideal location to perform the proposed experiments.
+In addition to drawing upon the Adryan lab's particular interests and strengths, there are a number of potential collaborators both in the department and at the nearby EBI.
+I will draw heavily upon the expertise in Cambridge, cultivated through the entire history of molecular biology, for insights into the development of the precise experimental protocols to be used and into the analysis of the data I will generate.
+
 \subsection{Broader Impacts}
 
+Throughout the course of this project, I will collaborate with and mentor undergraduate and graduate students at Cambridge.
+By developing my mentorship skills, I will be able to better develop scientific talent upon my return to the US and help to recruit talented students from abroad.
+
+This award will also do more than help me, a single Mexican-American scientist; I will maintain connections with both UC Berkeley and Princeton alumni networks, and provide advice and mentoring to others trying to navigate a career in science, at many steps in the pipeline.
+Since international collaboration is an integral part of the modern scientific enterprise, it will be especially helpful to demonstrate that support is available for work abroad.
+It is also critical to allow minorities to seek safe spaces without the same historical issues surrounding minority participation.
+
+I will present and promote my work at interdisciplinary conferences, and publish in high-impact Open Access journals.
+In order to maintain strong links to the American research community, I will return frequently to present my work at broad conferences, such as the Drosophila Research Conference or the Cold Spring Harbor Systems Biology meeting.
+I am also a firm believer that publishing exclusively in Open Access journals is important for making research products broadly available at all levels.
+Furthermore, such journals are more often willing to permit authors to post pre-prints, which helps speed the broad exchange of ideas.
 
 
 
@@ -244,8 +274,8 @@ The proposed project is ambitious, but is feasible to complete within the three 
 
 \subsection*{Professional Preparation}
 \begin{description}
-\item[Princeton University] B.A. in Physics with certificate in Quantitative and Computational Biology; 2008
-\item [University of California, Berkeley] Ph.D. in Biophysics; 2015 (Anticipated)
+\item[Princeton University] A.B. in Physics with certificate in Quantitative and Computational Biology; June 2008
+\item [University of California, Berkeley] Ph.D. in Biophysics; May 2015 (Anticipated)
 
 \end{description}
 
@@ -272,13 +302,52 @@ The proposed project is ambitious, but is feasible to complete within the three 
 
 
 \subsection*{Synergistic Activities}
-2010-2013. Head Instructor, QB3 Python Programming bootcamp.
-2007-2009
+\begin{itemize}
+\item 2010-2013. Head Instructor, QB3 Python Programming bootcamp. Berkeley, CA.
+\item 2007-2009. Head Teaching Assistant, The Summer Science Program Inc. Socorro, NM and Ojai, CA.
+\end{itemize}
 
 \subsection*{Collaborators}
 
 {\bf Ph.D. Advisor}: Michael B. Eisen, University of California, Berkeley
 
 \noindent{\bf Other Collaborators}: James Berger (Johns Hopkins University), Angel DePace (Harvard University), Thomas Gregor (Princeton University), Norbert Perrimon (Harvard University).
+
+\newpage
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\DataManagementPage--\arabic{page}}
+\noindent{\Large \bf Data Management Plan}
+
+Data from the proposed project will consist primarily of high throughput sequencing data, images, transgenic {\em Drosophila} lines, and DNA constructs.
+All data will be stored in digital form, either in the format in which it was originally generated, or in digitized form (e.g. scanning to TIFF, JPG, or similar appropriate formats).
+All such digital files will be backed up to external hard drives and/or DVDs in order to ensure long-term availability of the data.
+Representative images and subsets of data will be included in manuscripts and presentations 
+
+\subsection*{Sequencing Data}
+
+All RNA-seq and ATAC-seq data will be uploaded to the NIH's Gene Expression Omnibus (GEO) before submission for publication, and no later than the end of the funding period.
+The GEO is publicly available, and the relevant GEO Accession numbers will be included in manuscripts citing the data.
+The GEO does not place limits on the amount of data submitted, and does not charge for storage. 
+Additional processed data files (mapped read files, per-gene count data, locations and intensities of ATAC-seq peaks) will be stored as plain-text tab-separated or comma-separated files for ease of processing.
+Such processed files will be stored on the Adryan lab website, and included with published manuscripts as supplementary data. 
+
+
+\subsection*{Fly Lines}
+
+The transgenic fly lines generated in Aim 2 of this project will be maintained in the Adryan lab.
+The cost of maintaining lines once generated is negligible---on the order of \$10 per year. 
+Once stable integration of the tracheal markers have been identified, all fly lines will be made available to others upon request (even before publication of the relevant data).
+Additionally, when appropriate, lines will be submitted to the Bloomington Drosophila Stock Center at Indiana University, the standard stock center for broadly useful {\em Drosophila} transgenic lines. 
+
+\subsection*{Analysis Code}
+
+All relevant analysis code will be publicly available on GitHub (\url{https://github.com/petercombs/}), or a similar versioning enabled code tracking service. 
+Additionally, any R code will be made available on Bioconductor, with documentation and vignettes detailing usage. 
+
+\subsection*{Manuscripts}
+
+All manuscripts will be deposited in relevant pre-print servers (such as bioRxiv) and the Adryan lab website (\url{http://logic.sysbiol.cam.ac.uk/}) prior to publication.
+Manuscripts will only be submitted to journals that permit posting of pre-prints.
+Additionally, strong preference will be given to journals which have a reasonably priced Open Access option.
 
 \end{document}
