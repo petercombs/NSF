@@ -3,4 +3,5 @@
 *.pdf
 *.gz
 *.blg
+*.out
 *.bbl
